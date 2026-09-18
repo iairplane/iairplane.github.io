@@ -3,20 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f6f6f4">
-    <meta name="color-scheme" content="light">
-    <meta name="description" content="Research portfolio of Zhuoran Li (SJTU), spanning embodied AI, graph learning, and planning. Featured: RoboHarness, accepted to IROS 2026 (arXiv:2603.24060).">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Zhuoran Li is an undergraduate researcher at Shanghai Jiao Tong University working on embodied AI, robot learning, graph learning, and route planning.">
     <meta name="author" content="Zhuoran Li">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Zhuoran Li — Research Portfolio">
-    <meta property="og:description" content="Building intelligent systems—from algorithms to embodied agents. Featured work: RoboHarness (IROS 2026, arXiv:2603.24060).">
+    <meta property="og:title" content="Zhuoran Li">
+    <meta property="og:description" content="Undergraduate researcher working on embodied AI, robot learning, graph learning, and route planning.">
     <meta property="og:url" content="https://iairplane.github.io/">
     <meta property="og:image" content="https://iairplane.github.io/assets/media/zhuoran-hero.jpg">
-    <meta property="og:image:alt" content="Portrait of Zhuoran Li beneath flowering trees at a traditional building.">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image:alt" content="Portrait of Zhuoran Li beneath flowering trees.">
+    <meta name="twitter:card" content="summary">
 
-    <title>Zhuoran Li — Research Portfolio</title>
+    <title>Zhuoran Li</title>
     <link rel="canonical" href="https://iairplane.github.io/">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/media/zhuoran-hero.jpg" as="image" fetchpriority="high">
@@ -44,383 +43,175 @@
           "Vision-language-action models",
           "Graph learning",
           "Route planning"
-        ],
-        "subjectOf": {
-          "@type": "ScholarlyArticle",
-          "name": "RoboHarness: A Memory-Augmented Policy Harness for Vision-Language-Action Model Robustness via In-Context Adaptation",
-          "identifier": "arXiv:2603.24060",
-          "url": "https://arxiv.org/abs/2603.24060"
-        }
+        ]
       }
     </script>
   </head>
 
-  <body>
+  <body data-header>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header" data-header>
-      <div class="header-inner page-shell">
-        <a class="brand" href="#top" aria-label="Z L — Zhuoran Li, home">
-          <span class="brand-mark" aria-hidden="true">
-            <span>Z</span><span>L</span>
-          </span>
-          <span class="brand-name">Zhuoran Li</span>
-        </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-label="Open navigation"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-          data-menu-toggle
-        >
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="site-name" href="#top">Zhuoran Li</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
+          <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </button>
-
-        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-navigation>
-          <div class="nav-links">
-            <a href="#work">Work</a>
-            <a href="#profile">Profile</a>
-            <a href="documents/Zhuoran_Li_CV.pdf" download="Zhuoran_Li_CV.pdf">CV</a>
-            <a href="mailto:airplane@sjtu.edu.cn">Contact</a>
-          </div>
-          <div class="nav-mobile-meta" aria-hidden="true">
-            <span>SJTU / SHANGHAI</span>
-            <span>RESEARCH PORTFOLIO / 2026</span>
-          </div>
-        </nav>
-      </div>
+        <div class="nav-links" id="primary-navigation" data-navigation>
+          <a href="#top">About</a>
+          <a href="#news">News</a>
+          <a href="#research">Research</a>
+          <a href="#misc">Misc</a>
+          <a href="documents/Zhuoran_Li_CV.pdf" download="Zhuoran_Li_CV.pdf">CV</a>
+        </div>
+      </nav>
     </header>
 
-    <main id="main-content">
-      <section class="hero page-shell" id="top" aria-labelledby="hero-title">
-        <div class="hero-card" data-reveal>
-          <div class="hero-media">
-            <img
-              class="hero-image"
-              src="assets/media/zhuoran-hero.jpg"
-              alt="Zhuoran Li standing beneath flowering trees beside a traditional building."
-              width="1696"
-              height="1105"
-              fetchpriority="high"
-            >
-            <div class="hero-shade" aria-hidden="true"></div>
-
-            <div class="hero-meta mono">
-              <span>ZHUORAN LI / RESEARCH PORTFOLIO</span>
-              <span>SJTU / 2027</span>
-            </div>
+    <main id="main-content" class="container">
+      <section class="about" id="top" aria-labelledby="page-title">
+        <div class="profile">
+          <img src="assets/media/zhuoran-hero.jpg" alt="Zhuoran Li beneath flowering trees beside a traditional building." width="1696" height="1105" fetchpriority="high">
+          <div class="profile-links" aria-label="Contact links">
+            <a href="mailto:airplane@sjtu.edu.cn" aria-label="Email Zhuoran Li">Email</a>
+            <a href="https://github.com/iairplane" rel="me external noopener" target="_blank">GitHub</a>
+            <a href="https://www.semanticscholar.org/author/2372438421" rel="me external noopener" target="_blank">Scholar</a>
           </div>
-
-          <div class="hero-copy">
-            <p class="eyebrow eyebrow--light mono">LEARNING · PLANNING · EMBODIMENT</p>
-            <h1 id="hero-title">Building intelligent systems—from algorithms to embodied agents.</h1>
-            <p>
-              I study learning, planning, and reliable decision-making, with current work centered on embodied AI and robotic manipulation.
-            </p>
-            <div class="hero-actions">
-              <a class="button button--light" href="#work">
-                Explore selected work <span aria-hidden="true">↓</span>
-              </a>
-              <a class="button button--ghost-light" href="documents/Zhuoran_Li_CV.pdf" download="Zhuoran_Li_CV.pdf">
-                Download CV <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-
-          <span class="registration-mark registration-mark--tl" aria-hidden="true"></span>
-          <span class="registration-mark registration-mark--tr" aria-hidden="true"></span>
-          <span class="registration-mark registration-mark--bl" aria-hidden="true"></span>
-          <span class="registration-mark registration-mark--br" aria-hidden="true"></span>
         </div>
-      </section>
 
-      <section class="work page-shell" id="work" aria-labelledby="work-title">
-        <header class="section-header grid" data-reveal>
-          <p class="section-index mono">01 / SELECTED WORK</p>
-          <div class="section-heading">
-            <h2 id="work-title">Research, built into systems.</h2>
-            <p>
-              Five projects tracing a path from efficient graph algorithms and structured matching to robot learning and dependable embodied intelligence.
-            </p>
-          </div>
+        <header class="page-heading">
+          <h1 id="page-title"><strong>Zhuoran</strong> Li</h1>
+          <p class="tagline">Undergraduate researcher · Shanghai Jiao Tong University</p>
         </header>
 
-        <div class="project-stack">
-          <article class="project project--flagship grid" id="roboharness" data-reveal>
-            <div class="project-copy">
-              <p class="project-meta mono">01 / ACCEPTED TO IROS 2026 · FIRST-LISTED CO-FIRST AUTHOR</p>
-              <h3>RoboHarness</h3>
-              <p class="project-subtitle">A memory-augmented policy harness for VLA robustness</p>
-              <p>
-                Vision-language-action models can execute diverse manipulation skills, yet frozen policies remain brittle under perceptual noise, language ambiguity, execution failures, and long-horizon distribution shifts. RoboHarness adds adaptation outside the policy: contrastive Dual-Memory RAG retrieves both successful and failed precedents, while an attribution-driven multimodal orchestrator diagnoses the current failure and selects tool-mediated interventions without updating model parameters.
-              </p>
-              <p>
-                Offline memory consolidation turns execution traces into reusable priors. Across π<sub>0</sub>, π<sub>0.5</sub>, and SmolVLA on LIBERO-PRO and LIBERO-RoboHarness, the harness delivers a 56.6-percentage-point average absolute success-rate gain, including 89.1 points on long-horizon task chaining. The result frames robot adaptation as a modular systems layer around existing policies.
-              </p>
+        <div class="intro">
+          <p>
+            I am an undergraduate researcher at <strong>Shanghai Jiao Tong University</strong>, working in IPADS on embodied AI, robot learning, graph learning, and route planning. I am interested in making intelligent systems more capable, efficient, and dependable.
+          </p>
+          <p>
+            My current work focuses on reliable decision-making for robotic manipulation, including vision-language-action models, structured adaptation, and benchmarks that make progress measurable.
+          </p>
+          <p class="contact-invite">Please feel free to contact me <span aria-hidden="true">👋</span></p>
+        </div>
 
-              <dl class="metric-grid">
-                <div>
-                  <dt>Average gain</dt>
-                  <dd>+56.6<span>pp</span></dd>
-                </div>
-                <div>
-                  <dt>Long-horizon gain</dt>
-                  <dd>+89.1<span>pp</span></dd>
-                </div>
-                <div>
-                  <dt>VLA backbones</dt>
-                  <dd>03</dd>
-                </div>
-              </dl>
+        <dl class="facts" aria-label="Academic background">
+          <div>
+            <dt>Program</dt>
+            <dd>B.Eng. Software Engineering · 2027</dd>
+          </div>
+          <div>
+            <dt>Research home</dt>
+            <dd>IPADS · Undergraduate Researcher</dd>
+          </div>
+          <div>
+            <dt>Academic standing</dt>
+            <dd>GPA 92.2/100 · Rank 3/95</dd>
+          </div>
+        </dl>
+      </section>
 
-              <div class="project-links" role="group" aria-label="RoboHarness links">
-                <a href="https://lzy-1021.github.io/RoboHarness/">Project <span aria-hidden="true">↗</span></a>
-                <a href="https://arxiv.org/abs/2603.24060">Paper <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/LZY-1021/RoboHarness" aria-label="RoboHarness code — team repository">Code <span aria-hidden="true">↗</span></a>
-              </div>
+      <section class="section" id="news" aria-labelledby="news-title">
+        <h2 id="news-title">News</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <time datetime="2026">2026</time>
+            <p><a href="#roboharness">RoboHarness</a> was accepted to IROS 2026.</p>
+          </div>
+          <div class="news-item">
+            <time datetime="2026">2026</time>
+            <p><a href="#gkd-recruiter">GKD-Recruiter</a> was accepted as a regular paper at ICML 2026.</p>
+          </div>
+          <div class="news-item">
+            <time datetime="2025">2025</time>
+            <p><a href="#drncs">DRNCS</a> appeared in ECML PKDD 2025.</p>
+          </div>
+          <div class="news-item">
+            <time datetime="2025">2025</time>
+            <p>The <a href="#maniladder">ManiLadder</a> benchmark and overview video are now available online.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading-row">
+          <h2 id="research-title">Selected work</h2>
+          <p class="section-note">Research, systems, and benchmarks</p>
+        </div>
+
+        <div class="work-list">
+          <article class="work-item" id="roboharness">
+            <figure class="work-media work-media--video">
+              <video muted loop autoplay playsinline preload="metadata" aria-label="RoboHarness visual recovery demonstration">
+                <source src="assets/media/roboharness-visual.mp4" type="video/mp4">
+              </video>
+            </figure>
+            <div class="work-copy">
+              <p class="work-meta">IROS 2026 · First-listed co-first author</p>
+              <h3>RoboHarness: A memory-augmented policy harness for VLA robustness</h3>
+              <p>RoboHarness adapts frozen vision-language-action policies through dual-memory retrieval and attribution-driven interventions. Across three VLA backbones, it improves average success by <strong>56.6 percentage points</strong>, including <strong>89.1 points</strong> on long-horizon tasks.</p>
+              <p class="links"><a href="https://lzy-1021.github.io/RoboHarness/" target="_blank" rel="external noopener">Project</a><a href="https://arxiv.org/abs/2603.24060" target="_blank" rel="external noopener">Paper</a><a href="https://github.com/LZY-1021/RoboHarness" target="_blank" rel="external noopener">Code</a></p>
             </div>
-
-            <div class="demo-panel" data-video-gallery>
-              <div class="demo-header mono">
-                <span>OOD RECOVERY / LIVE LOOPS</span>
-                <button type="button" data-video-toggle>Pause loops</button>
-              </div>
-              <div class="demo-grid">
-                <figure>
-                  <video muted loop playsinline preload="metadata" aria-label="RoboHarness visual overlay recovery demonstration">
-                    <source src="assets/media/roboharness-visual.mp4" type="video/mp4">
-                  </video>
-                  <figcaption><span>01</span> Visual overlay</figcaption>
-                </figure>
-                <figure>
-                  <video muted loop playsinline preload="metadata" aria-label="RoboHarness distractor removal demonstration">
-                    <source src="assets/media/roboharness-distractor.mp4" type="video/mp4">
-                  </video>
-                  <figcaption><span>02</span> Distractor removal</figcaption>
-                </figure>
-                <figure>
-                  <video muted loop playsinline preload="metadata" aria-label="RoboHarness language recovery demonstration">
-                    <source src="assets/media/roboharness-language.mp4" type="video/mp4">
-                  </video>
-                  <figcaption><span>03</span> Prompt recovery</figcaption>
-                </figure>
-                <figure>
-                  <video muted loop playsinline preload="metadata" aria-label="RoboHarness long-horizon task demonstration">
-                    <source src="assets/media/roboharness-long-horizon.mp4" type="video/mp4">
-                  </video>
-                  <figcaption><span>04</span> Task decomposition</figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <span class="registration-mark registration-mark--tl" aria-hidden="true"></span>
-            <span class="registration-mark registration-mark--br" aria-hidden="true"></span>
           </article>
 
-          <article class="project project--split grid" id="maniladder" data-reveal>
-            <div class="project-copy">
-              <p class="project-meta mono">02 / ONGOING RESEARCH · CO-AUTHOR</p>
-              <h3>ManiLadder</h3>
-              <p class="project-subtitle">A multi-level benchmark for manipulation intelligence</p>
-              <p>
-                Robot manipulation benchmarks often isolate a single capability or rely on ad hoc tasks, making it difficult to answer a basic question: how difficult a task can a policy actually solve? ManiLadder studies manipulation intelligence as a staged progression across more than one hundred simulated tasks and four levels of difficulty.
-              </p>
-              <p>
-                A modular workflow connects task construction, demonstration collection, policy training, and automated evaluation so imitation-learning and VLA policies can be compared under one repeatable protocol. Rather than reducing performance to one aggregate score, the benchmark is designed to show where capability changes as tasks require longer horizons, richer coordination, and stronger generalization. The project remains ongoing; public paper, code, and media will be linked after the team release.
-              </p>
-
-              <dl class="metric-grid metric-grid--light">
-                <div><dt>Task suite</dt><dd>100<span>+</span></dd></div>
-                <div><dt>Evaluation</dt><dd>Unified</dd></div>
-                <div><dt>Difficulty levels</dt><dd>04</dd></div>
-              </dl>
-
-              <p class="release-note mono">PUBLIC MATERIALS WILL FOLLOW THE MANUSCRIPT RELEASE</p>
-            </div>
-
-            <figure class="project-visual">
-              <img
-                class="project-visual-image"
-                src="assets/media/maniladder2.gif"
-                alt="Eight real-world robot manipulation tasks with success rates from 100% to 0%, illustrating ManiLadder's calibrated difficulty levels."
-                width="289"
-                height="163"
-                loading="lazy"
-                decoding="async"
-              >
+          <article class="work-item work-item--maniladder" id="maniladder">
+            <figure class="work-media">
+              <video controls preload="metadata" poster="assets/media/maniladder-poster.jpg" aria-label="ManiLadder overview video">
+                <source src="https://maniladder.github.io/videos/video_corl26.mp4" type="video/mp4">
+                <a href="https://maniladder.github.io/videos/video_corl26.mp4" target="_blank" rel="external noopener">Open the ManiLadder overview video</a>
+              </video>
             </figure>
+            <div class="work-copy">
+              <p class="work-meta">Ongoing research · Co-author</p>
+              <h3>ManiLadder: Benchmarking robot manipulation through a categorized, multi-level task ladder</h3>
+              <p>ManiLadder organizes more than 100 simulated manipulation tasks into four difficulty levels, with one workflow for task construction, demonstrations, policy training, and evaluation. The benchmark makes it easier to see where capability changes as tasks demand longer horizons, richer coordination, and stronger generalization.</p>
+              <p class="links"><a href="https://maniladder.github.io/" target="_blank" rel="external noopener">Project page</a><a href="https://maniladder.github.io/videos/video_corl26.mp4" target="_blank" rel="external noopener">Video</a></p>
+            </div>
           </article>
 
-          <article class="project project--split project--reverse grid" id="gkd-recruiter" data-reveal>
-            <div class="project-copy">
-              <p class="project-meta mono">03 / ICML 2026 REGULAR PAPER · CO-AUTHOR</p>
-              <h3>GKD-Recruiter</h3>
-              <p class="project-subtitle">Graph knowledge distillation for spatial crowdsourcing</p>
-              <p>
-                Spatial crowdsourcing platforms can recruit through social networks, but conventional influence maximization assumes that interest becomes participation and that more spread is always better. Both assumptions fail when workers must physically reach heterogeneous tasks and each task has finite demand. GKD-Recruiter instead optimizes Effective Task Satisfaction through a heterogeneous graph of worker–task affinity.
-              </p>
-              <p>
-                An Influential GAT captures directional social influence, graph knowledge distillation fuses it with task-side signals, and Rainbow DQN searches the resulting non-submodular recruitment space. Experiments on real-world datasets show significant gains over state-of-the-art baselines in solution quality and inference efficiency. The framework makes recruitment task-aware: selected workers must not only propagate invitations, but satisfy the right physical tasks under limited demand.
-              </p>
-
-              <ul class="concept-list" aria-label="GKD-Recruiter highlights">
-                <li>Task–worker graphs</li>
-                <li>Two-sided heterogeneity</li>
-                <li>Graph knowledge distillation</li>
-              </ul>
-
-              <div class="project-links project-links--dark" role="group" aria-label="GKD-Recruiter links">
-                <a href="https://icml.cc/virtual/2026/poster/61673">Project <span aria-hidden="true">↗</span></a>
-                <a href="https://openreview.net/forum?id=nsEtk9aFiZ">Paper <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/GaoYucen/GKD-Recruiter">Code <span aria-hidden="true">↗</span></a>
-              </div>
+          <article class="work-item" id="gkd-recruiter">
+            <figure class="work-media"><img src="assets/media/GKD.png" alt="GKD-Recruiter architecture combining social and worker-task graph embeddings, graph knowledge distillation, and Rainbow DQN recruitment." width="645" height="394" loading="lazy" decoding="async"></figure>
+            <div class="work-copy">
+              <p class="work-meta">ICML 2026 regular paper · Co-author</p>
+              <h3>GKD-Recruiter: Graph knowledge distillation for spatial crowdsourcing</h3>
+              <p>GKD-Recruiter combines directional social influence with worker–task affinity and uses graph knowledge distillation plus Rainbow DQN to recruit workers for the right physical tasks under limited demand.</p>
+              <p class="links"><a href="https://icml.cc/virtual/2026/poster/61673" target="_blank" rel="external noopener">Project</a><a href="https://openreview.net/forum?id=nsEtk9aFiZ" target="_blank" rel="external noopener">Paper</a><a href="https://github.com/GaoYucen/GKD-Recruiter" target="_blank" rel="external noopener">Code</a></p>
             </div>
-
-            <figure class="project-visual">
-              <img
-                class="project-visual-image"
-                src="assets/media/GKD.png"
-                alt="GKD-Recruiter architecture combining social and worker-task graph embeddings, graph knowledge distillation, and Rainbow DQN recruitment."
-                width="645"
-                height="394"
-                loading="lazy"
-                decoding="async"
-              >
-            </figure>
           </article>
 
-          <article class="project project--split grid" id="drncs" data-reveal>
-            <div class="project-copy">
-              <p class="project-meta mono">04 / ECML PKDD 2025 · FIRST AUTHOR</p>
-              <h3>DRNCS</h3>
-              <p class="project-subtitle">Dual-level route generation through contraction and shortcuts</p>
-              <p>
-                Learning-based route generation becomes increasingly expensive on long routes, where dense road graphs enlarge the autoregressive search space and compromise real-time service. DRNCS introduces a dual-level route model built around Shortcut-Edge Differential Contraction: nodes are removed according to edge difference to avoid the out-degree explosion common in standard contraction schemes, producing a much sparser graph while preserving useful structure.
-              </p>
-              <p>
-                Likely shortcuts are constructed by merging historical routes with probability-weighted bidirectional Dijkstra search, then invoked while the model predicts on the contracted graph. Across five real-world datasets, DRNCS reports 0.3–0.8 milliseconds per trip, 1,249–3,356 generated trips per second, and more than 40% faster queries while maintaining competitive accuracy and reachability.
-              </p>
-
-              <dl class="metric-grid metric-grid--light">
-                <div><dt>Latency / trip</dt><dd>0.3–0.8<span>ms</span></dd></div>
-                <div><dt>Throughput</dt><dd>3,356</dd></div>
-                <div><dt>Query time</dt><dd>&gt;40<span>% less</span></dd></div>
-              </dl>
-
-              <div class="project-links project-links--dark" role="group" aria-label="DRNCS links">
-                <a href="https://link.springer.com/chapter/10.1007/978-3-032-06066-2_11">Paper <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/iairplane/DRNCS">Code <span aria-hidden="true">↗</span></a>
-              </div>
+          <article class="work-item" id="drncs">
+            <figure class="work-media"><img src="assets/media/drncs.png" alt="DRNCS dual-level route generation pipeline with shortcut construction and prediction on original and sparse graphs." width="653" height="385" loading="lazy" decoding="async"></figure>
+            <div class="work-copy">
+              <p class="work-meta">ECML PKDD 2025 · First author</p>
+              <h3>DRNCS: Dual-level route generation through contraction and shortcuts</h3>
+              <p>DRNCS builds a sparse road graph with shortcut-edge differential contraction, then generates routes on the contracted structure. It reports 0.3–0.8 ms per trip and more than 40% faster queries across five real-world datasets.</p>
+              <p class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-032-06066-2_11" target="_blank" rel="external noopener">Paper</a><a href="https://github.com/iairplane/DRNCS" target="_blank" rel="external noopener">Code</a></p>
             </div>
-
-            <figure class="project-visual">
-              <img
-                class="project-visual-image"
-                src="assets/media/drncs.png"
-                alt="DRNCS dual-level route generation pipeline with shortcut construction and prediction on original and sparse graphs."
-                width="653"
-                height="385"
-                loading="lazy"
-                decoding="async"
-              >
-            </figure>
           </article>
 
-          <article class="project project--split project--reverse grid" id="sptp" data-reveal>
-            <div class="project-copy">
-              <p class="project-meta mono">05 / TCS 1054 (2025) · CO-AUTHOR</p>
-              <h3>Algorithms for Shortest Path Tour Problem</h3>
-              <p class="project-subtitle">Exact algorithms for ordered waypoints on road networks</p>
-              <p>
-                Carpooling with multiple candidate pickup and drop-off locations leads to the Shortest Path Tour Problem: find an origin-to-destination path that visits an ordered sequence of disjoint node subsets while choosing one suitable node from each. Existing exact methods can spend substantial time materializing or searching expanded structures.
-              </p>
-              <p>
-                This work develops two exact, linear-space alternatives. Stage Dijkstra solves the problem one subset at a time and attains the best-known O(ℓ(n+m) log n) time bound; Global Dijkstra explores multiple stages concurrently and runs faster in practice on large road networks. Experiments on real and synthetic graphs confirm strong time and memory efficiency, with applications beyond carpooling to ordered multi-stage tasks.
-              </p>
-
-              <dl class="metric-grid metric-grid--light">
-                <div><dt>Time bound</dt><dd class="metric-formula">O(ℓ(n+m) log n)</dd></div>
-                <div><dt>Memory</dt><dd>Linear</dd></div>
-                <div><dt>Solution</dt><dd>Exact</dd></div>
-              </dl>
-
-              <div class="project-links project-links--dark" role="group" aria-label="Shortest Path Tour paper link">
-                <a href="https://www.sciencedirect.com/science/article/pii/S0304397525003664">Paper <span aria-hidden="true">↗</span></a>
-              </div>
+          <article class="work-item" id="sptp">
+            <figure class="work-media"><img src="assets/media/SPTP.png" alt="Layered graph for the Shortest Path Tour Problem, showing candidate nodes across ordered stages from source to destination." width="654" height="394" loading="lazy" decoding="async"></figure>
+            <div class="work-copy">
+              <p class="work-meta">Theoretical Computer Science 1054 (2025) · Co-author</p>
+              <h3>Algorithms for the Shortest Path Tour Problem</h3>
+              <p>Two exact, linear-space algorithms solve ordered waypoint tours on road networks. Stage Dijkstra reaches the best-known time bound, while Global Dijkstra is faster in practice on large graphs.</p>
+              <p class="links"><a href="https://www.sciencedirect.com/science/article/pii/S0304397525003664" target="_blank" rel="external noopener">Paper</a></p>
             </div>
-
-            <figure class="project-visual">
-              <img
-                class="project-visual-image"
-                src="assets/media/SPTP.png"
-                alt="Layered graph for the Shortest Path Tour Problem, showing candidate nodes across ordered stages from source to destination."
-                width="654"
-                height="394"
-                loading="lazy"
-                decoding="async"
-              >
-            </figure>
           </article>
         </div>
       </section>
 
-      <section class="profile page-shell" id="profile" aria-labelledby="profile-title">
-        <div class="profile-card grid" data-reveal>
-          <p class="section-index mono">02 / PROFILE</p>
-          <div class="profile-copy">
-            <h2 id="profile-title">From structured algorithms to embodied systems.</h2>
-            <p class="profile-lede">
-              I am an undergraduate researcher at Shanghai Jiao Tong University. Across robot learning, graph learning, and route planning, I am interested in how structure can make intelligent systems more capable, efficient, and dependable.
-            </p>
-
-            <dl class="profile-facts">
-              <div>
-                <dt>Institution</dt>
-                <dd>Shanghai Jiao Tong University</dd>
-              </div>
-              <div>
-                <dt>Program</dt>
-                <dd>B.Eng. in Software Engineering · Expected 2027</dd>
-              </div>
-              <div>
-                <dt>Research home</dt>
-                <dd>IPADS · Undergraduate Researcher</dd>
-              </div>
-              <div>
-                <dt>Academic standing</dt>
-                <dd>GPA 92.2/100 · Rank 3/95</dd>
-              </div>
-            </dl>
-
-            <div class="profile-links" role="group" aria-label="Profile links">
-              <a href="mailto:airplane@sjtu.edu.cn">Email <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/iairplane" rel="me">GitHub <span aria-hidden="true">↗</span></a>
-              <a href="https://www.semanticscholar.org/author/2372438421" rel="me">Semantic Scholar <span aria-hidden="true">↗</span></a>
-              <a href="documents/Zhuoran_Li_CV.pdf" download="Zhuoran_Li_CV.pdf">CV <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-
-          <span class="registration-mark registration-mark--tl registration-mark--dark" aria-hidden="true"></span>
-          <span class="registration-mark registration-mark--br registration-mark--dark" aria-hidden="true"></span>
-        </div>
+      <section class="section misc" id="misc" aria-labelledby="misc-title">
+        <h2 id="misc-title">Misc</h2>
+        <p>Outside research, I enjoy <strong>climbing</strong> and <strong>strength training</strong>, and I like keeping an active routine while exploring new places.</p>
+        <p class="misc-links"><a href="mailto:airplane@sjtu.edu.cn">Get in touch</a><a href="documents/Zhuoran_Li_CV.pdf" download="Zhuoran_Li_CV.pdf">Download CV</a></p>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact">
-      <div class="footer-inner page-shell grid">
-        <p class="section-index mono">03 / CONTACT</p>
-        <div class="footer-cta">
-          <p>Research, collaboration, or a good question.</p>
-          <a href="mailto:airplane@sjtu.edu.cn">Let’s talk.<span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="footer-meta mono">
-          <span>© 2026 ZHUORAN LI</span>
-          <span>SHANGHAI / CHINA</span>
-          <a href="#top">BACK TO TOP ↑</a>
-        </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Zhuoran Li</span>
+        <a href="#top">Back to top ↑</a>
       </div>
     </footer>
   </body>
