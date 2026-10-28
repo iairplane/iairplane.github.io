@@ -1,0 +1,233 @@
+% Academic CV -- Zhuoran Li
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.72in,top=0.62in,bottom=0.64in]{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\definecolor{accent}{HTML}{094AA8}
+\usepackage[colorlinks=true,urlcolor=accent,linkcolor=black,citecolor=black]{hyperref}
+\hypersetup{
+  pdftitle={Zhuoran Li -- Academic CV},
+  pdfauthor={Zhuoran Li}
+}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\pdfgentounicode=1
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{1.5em}
+\linespread{1.02}
+
+\titleformat{\section}
+  {\large\bfseries\scshape\color{accent}}
+  {}{0pt}{}[\vspace{-2pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4.5pt}
+
+\setlist[itemize]{
+  leftmargin=1.25em,
+  topsep=2.5pt,
+  itemsep=1.8pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\datedline}[2]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\textwidth}@{}}
+    #1 & #2
+  \end{tabularx}%
+}
+
+\newcommand{\experience}[3]{%
+  \par\noindent
+  \datedline{\textbf{#1}}{#2}\\[-1pt]
+  {\small\textit{#3}}\vspace{1pt}
+}
+
+\newcommand{\publink}[2]{%
+  \href{#1}{[#2]}%
+}
+
+\newcommand{\awarditem}[1]{%
+  \par\noindent
+  \hangindent=0.9em
+  \hangafter=1
+  \makebox[0.9em][l]{\raisebox{0.1ex}{\scriptsize\textbullet}}#1%
+}
+
+\newcommand{\publication}[4]{%
+  \item[] \textbf{#1}\\[-1pt]
+  #2\\[-1pt]
+  \textit{#3}\hspace{0.45em}#4
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Zhuoran Li}\\[3pt]
+  \small
+  +86 151-8984-3657
+  \quad $\vert$ \quad
+  \href{mailto:airplane@sjtu.edu.cn}{airplane@sjtu.edu.cn}
+  \quad $\vert$ \quad
+  \href{https://iairplane.github.io/}{iairplane.github.io}
+\end{center}
+\vspace{-7pt}
+
+\section{Research Interests}
+Reliable vision-language-action models; robust world-model reinforcement learning; agentic tactile
+manipulation; failure diagnosis and recovery; long-horizon manipulation; multimodal learning systems.
+
+\section{Education}
+\datedline{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{Sep. 2023 -- Jun. 2027 (Expected)}
+\textit{B.Eng. in Software Engineering, School of Computer Science}\\[1pt]
+GPA: \textbf{92.2/100}; Rank: \textbf{3/95}. Undergraduate researcher at the Institute of Parallel and
+Distributed Systems (IPADS), advised by Profs. Jinyu Gu and Haibo Chen.
+
+\section{Selected Publications}
+\begin{itemize}[leftmargin=0pt,label={},itemsep=3.5pt,topsep=1pt]
+  \publication
+    {RoboHarness: A Memory-Augmented Policy Harness for Vision-Language-Action Model Robustness via In-Context Adaptation}
+    {\underline{Zhuoran Li}, Zhiyang Li, Kaijun Zhou, and Jinyu Gu.}
+    {IROS, 2026.}
+    {\publink{https://lzy-1021.github.io/RoboHarness/}{Project}\hspace{0.35em}
+     \publink{https://arxiv.org/abs/2603.24060}{Paper}\hspace{0.35em}
+     \publink{https://github.com/LZY-1021/RoboHarness}{Code}}
+
+  \publication
+    {GKD-Recruiter: Jointly Modeling Social and Task Heterogeneity for Spatial Crowdsourcing via Graph Knowledge Distillation}
+    {Yucen Gao$^{*}$, Zhemeng Yu$^{*}$, \underline{Zhuoran Li}$^{*}$, Jianxiong Guo, and Xiaofeng Gao.}
+    {ICML, 2026.}
+    {\publink{https://icml.cc/virtual/2026/poster/61673}{Project}\hspace{0.35em}
+     \publink{https://openreview.net/forum?id=nsEtk9aFiZ}{Paper}\hspace{0.35em}
+     \publink{https://github.com/GaoYucen/GKD-Recruiter}{Code}}
+
+  \publication
+    {ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Level Task Ladder}
+    {Chongkai Gao$^{*}$, Jieao Shi$^{*}$, Zhaoyu Mu$^{*}$, \underline{Zhuoran Li}, Yudi Lin,
+    Xuanwei Liu, Wei Ken Ng, Baiye Cheng, Anqi Chen, Kerun Liu, Xuchuan Huang, Shengjia Zhu,
+    Nga Teng Chan, Xingyu Chen, and Lin Shao.}
+    {Under review at ICRA 2027.}
+    {\publink{https://maniladder.github.io/}{Project}\hspace{0.35em}
+     \publink{https://ella-e.github.io/files/ManiLadder.pdf}{Paper}\\[-1pt]
+     \textcolor{accent}{\faTrophy}\ 
+     \href{https://bimanual-robot-learning.github.io/}{\textbf{Outstanding Workshop Paper Award}}
+     --- IROS 2026 Bimanual Robot Learning Workshop}
+
+  \publication
+    {DRNCS: Dual-Level Route Generation Model Based on Node Contraction and Shortcuts}
+    {\underline{Zhuoran Li}, Yucen Gao, Yu Yin, Xinle Li, Hui Gao, Xiaofeng Gao, and Guihai Chen.}
+    {ECML PKDD, 2025.}
+    {\publink{https://link.springer.com/chapter/10.1007/978-3-032-06066-2_11}{Paper}\hspace{0.35em}
+     \publink{https://github.com/iairplane/DRNCS}{Code}}
+
+  \publication
+    {Algorithms for Shortest Path Tour Problem}
+    {Yucen Gao, \underline{Zhuoran Li}, Jingyu He, Jun Fang, Hui Gao, Xiaofeng Gao, and Guihai Chen.}
+    {Theoretical Computer Science, 1054:115428, 2025.}
+    {\publink{https://www.sciencedirect.com/science/article/pii/S0304397525003664}{Paper}}
+\end{itemize}
+\vspace{-3pt}
+{\small $^{*}$Equal contribution.}
+
+\section{Research Experience}
+\experience{The University of Hong Kong (HKU)}{Oct. 2026 -- Present}
+{Research Assistant $\vert$ Advisor: Prof. Yi Ma}
+\begin{itemize}
+  \item \textbf{TouchCraft} \publink{https://iairplane.github.io/tactile_agent_page/}{Project} --- Converts one
+  RGB-D demonstration into an object-centric, stage-wise closed-loop policy by composing reusable tactile
+  primitives with local corrective actions and transitions.
+  \textcolor{accent}{\textit{Under review at CVPR 2027.}}
+\end{itemize}
+
+\experience{New York University (NYU)}{Aug. 2026 -- Present}
+{Research Intern $\vert$ Advisor: Prof. Zhengyuan Zhou}
+\begin{itemize}
+  \item \textbf{DRWM: Reverse-KL Robust Targets for World-Model Reinforcement Learning} --- Addresses tail
+  failures hidden by mean world-model targets with a plug-in aggregator that upweights adverse sampled
+  futures across four RL backbones; achieves the best CVaR10 and 100\% success on WIMLE-Walk while
+  preserving mean performance. \textcolor{accent}{\textit{Under review at ICML 2027.}}
+\end{itemize}
+
+\experience{Sharpa Robotics}{Oct. 2026 -- Present}
+{Research Intern $\vert$ Mentor: Hao Ma}
+\begin{itemize}
+  \item \textbf{Tactile Agents for Dexterous Manipulation} --- Explored the use of tactile agents for
+  contact-aware reasoning and closed-loop control in dexterous manipulation.
+\end{itemize}
+
+\newpage
+{\small\hfill Zhuoran Li $\vert$ Academic CV $\vert$ Page 2}\vspace{-4pt}
+
+\section{Research Experience (continued)}
+\experience{VITAL Technology}{May 2026 -- Oct. 2026}
+{Intern $\vert$ Mentors: Yizhe Wu and Rui Li}
+\begin{itemize}
+  \item \textbf{Agentic Robot--Tactile Integration} --- Explored architectures that fuse tactile feedback
+  with agentic robot reasoning and control.
+  \item \textbf{VTLA Post-Training} --- Contributed to post-training vision-touch-language-action models
+  for contact-rich manipulation.
+\end{itemize}
+
+\experience{Shanghai Jiao Tong University (SJTU)}{Jun. 2024 -- Present}
+{Undergraduate Researcher $\vert$ Advisors: Profs. Xiaofeng Gao, Jinyu Gu, and Haibo Chen}
+\begin{itemize}
+  \item \textbf{RoboHarness: Memory-Augmented Policy Harness for VLA Robustness} --- Built an inference-time
+  reliability layer for frozen VLA policies using contrastive Dual-Memory retrieval and attribution-guided
+  interventions; raised average success by 56.6 percentage points across three backbones. \textit{IROS 2026.}
+  \item \textbf{OpenHarmony Embodied Agent Systems} --- Secured a nationally selected RMB 100,000 NSFC
+  undergraduate research grant as Student PI and led research on embodied-agent systems for OpenHarmony.
+  \item \textbf{GKD-Recruiter} --- Framed spatial recruitment as heterogeneous multi-agent task allocation,
+  matching agent capabilities and social influence to task demands through graph knowledge distillation
+  and Rainbow DQN. \textit{ICML 2026.}
+  \item \textbf{DRNCS} --- Built a hierarchical route-generation method for navigation agents on dense road
+  graphs; node contraction and shortcut injection reduced planning to 0.3--0.8 ms per route and
+  3,356 routes/s. \textit{ECML PKDD 2025.}
+  \item \textbf{Shortest Path Tour Problem} --- Implemented and benchmarked exact Stage and Global Dijkstra
+  planners for agents visiting ordered waypoint sets, reaching up to a 50$\times$ speedup on million-node
+  road networks. \textit{Theoretical Computer Science, 2025.}
+\end{itemize}
+
+\experience{LinS Lab, National University of Singapore (NUS)}{Apr. 2025 -- Dec. 2026}
+{Research Intern $\vert$ Advisor: Prof. Lin Shao}
+\begin{itemize}
+  \item \textbf{ManiLadder} --- Developed simulation, data, and evaluation pipelines for 112 tasks across
+  four calibrated difficulty levels spanning diverse embodiments and manipulation skills.
+\end{itemize}
+
+\section{Awards and Honors}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash\color{accent}\bfseries\scriptsize}p{0.18\textwidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}X@{}}
+\makebox[1.15em][c]{{\footnotesize\faTrophy}}\hspace{0.25em}Paper Award &
+\awarditem{\textbf{Outstanding Workshop Paper Award} (2026) --- IROS Bimanual Robot Learning Workshop,
+``Scaling vs. Structure?''} \\[1.5pt]
+\makebox[1.15em][c]{{\footnotesize\faFlask}}\hspace{0.25em}Research Grants &
+\awarditem{\textbf{NSFC Basic Research Program for Undergraduate Students} (2026)\newline
+{\small\textbf{Nationally selected Student PI; RMB 100,000}}}
+\awarditem{\textbf{Chun-Tsung Foundation Award} (2024)\newline
+{\small\textbf{Student PI}}} \\[1.5pt]
+\makebox[1.15em][c]{{\footnotesize\faMedal}}\hspace{0.25em}Honors &
+\awarditem{\textbf{Zhiyuan Honor Scholarship} (2023--2025); \textbf{Academic Scholarship} (2024--2025)}
+\awarditem{\textbf{First Prize, Shanghai Undergraduate Mathematics Competition} (2024)}
+\awarditem{\textbf{Jiangsu Province Excellent Student Award} (2023)}
+\end{tabularx}
+
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.21\textwidth}@{\hspace{0.75em}}X@{}}
+Programming & C++, Python, Java, JavaScript/TypeScript \\
+AI and Robotics & PyTorch; reinforcement learning; world models; VLA and multimodal learning;
+tactile sensing; imitation learning; computer vision \\
+Robotics Tools & ROS 2, MuJoCo, Isaac Sim/Lab, Gymnasium, Genesis \\
+Systems and Tools & Linux, Git, LaTeX, React, Spring Boot, Nginx, Redis \\
+English & TOEFL: 5.5; CET-4: 624; CET-6: 605
+\end{tabularx}
+
+\end{document}
