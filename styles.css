@@ -459,16 +459,16 @@ dt,
 }
 
 .exp-when {
+  align-self: baseline;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 0;
-  padding-top: 0.15rem;
   padding-right: 0.9rem;
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.74rem;
-  line-height: 1.5;
+  line-height: 1.5rem;
   white-space: nowrap;
 }
 
@@ -482,7 +482,7 @@ dt,
   z-index: 1;
   width: 13px;
   height: 13px;
-  margin-top: 0.3rem;
+  margin-top: calc((1.5rem - 13px) / 2);
   border: 2px solid var(--accent);
   border-radius: 50%;
   background: var(--page);
@@ -530,15 +530,16 @@ dt,
 }
 
 .exp-body {
+  align-self: baseline;
   padding-left: 0.6rem;
 }
 
 .exp-body h3 {
-  margin: 0 0 0.15rem;
+  margin: 0;
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-  line-height: 1.35;
+  line-height: 1.5rem;
 }
 
 .exp-body h3 a {
@@ -550,18 +551,35 @@ dt,
   color: var(--accent);
 }
 
-.exp-body p {
-  margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.55;
-}
-
 .exp-role {
-  font-style: italic;
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4rem;
 }
 
-.exp-work {
+.exp-meta {
+  display: grid;
+  grid-template-columns: 4.6rem minmax(0, 1fr);
+  column-gap: 0.6rem;
+  row-gap: 0.15rem;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.exp-meta dt {
+  padding-top: 0.12rem;
   color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.exp-meta dd {
+  margin: 0;
+  color: var(--text);
 }
 
 .work-list {
