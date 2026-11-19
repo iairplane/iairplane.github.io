@@ -42,7 +42,7 @@
 }
 
 \newcommand{\datedline}[2]{%
-  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\textwidth}@{}}
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\textwidth}@{}}
     #1 & #2
   \end{tabularx}%
 }
@@ -155,9 +155,10 @@ Distributed Systems (IPADS), advised by Profs. \advisor{https://ipads.sjtu.edu.c
 \experience{The University of Hong Kong (HKU)}{Oct. 2026 -- Present}
 {Research Assistant $\vert$ Advisor: Prof. \advisor{https://www.ai.hku.hk/people/academic-staff/mayi}{Yi Ma}}
 \begin{itemize}
-  \item \textbf{TouchCraft} \publink{https://iairplane.github.io/tactile_agent_page/}{Project} --- Converts one
-  RGB-D demonstration into an object-centric, stage-wise closed-loop policy by composing reusable tactile
-  primitives with local corrective actions and transitions.
+  \item \textbf{CaTS: Code as Tactile Supervisor} \publink{https://iairplane.github.io/tactile_agent_page/}{Project}
+  --- Grounds robot agents in contact-rich manipulation: synthesizes stage-wise tactile supervisors from one
+  RGB-D demonstration and tactile-pattern priors, compiled into a locally executable program; outperforms all
+  baselines across 6 real-robot and 20 simulated tasks.
   \textcolor{accent}{\textit{Under review at CVPR 2027.}}
 \end{itemize}
 
