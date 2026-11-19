@@ -465,8 +465,8 @@ dt,
   background: #0d0d0d;
 }
 
-/* CaTS teaser is 16:9 on a dark background: show the full frame */
-.work-item--cats .work-media video {
+/* Project-page teasers are 16:9 on a dark background: show the full frame */
+.work-item--teaser .work-media video {
   aspect-ratio: 16 / 9;
   object-fit: contain;
   background: #090a0c;
