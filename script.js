@@ -147,4 +147,23 @@
       reducedMotion.addEventListener('change', onMotionPreferenceChange);
     }
   });
+
+  const newsFilter = document.querySelector('[data-news-filter]');
+  if (newsFilter) {
+    const buttons = newsFilter.querySelectorAll('button');
+    const items = document.querySelectorAll('.news-item[data-type]');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const type = button.dataset.type;
+        buttons.forEach((b) => {
+          const active = b === button;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-pressed', String(active));
+        });
+        items.forEach((item) => {
+          item.hidden = type !== 'all' && item.dataset.type !== type;
+        });
+      });
+    });
+  }
 })();
