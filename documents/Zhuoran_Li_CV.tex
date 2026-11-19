@@ -57,6 +57,18 @@
   \href{#1}{[#2]}%
 }
 
+% Advisor name linked to homepage (rendered in the accent blue)
+\newcommand{\advisor}[2]{\href{#1}{#2}}
+
+% Highlight tag for the NSFC grant
+\newcommand{\nsfctag}{%
+  \colorbox{accent!10}{\textcolor{accent}{\footnotesize\faFlask\ \textbf{NSFC-Funded $\vert$ Student PI $\vert$ RMB 100,000}}}%
+}
+
+% Awards table helpers
+\newcommand{\awardlabel}[2]{\mbox{\makebox[1.1em][c]{\footnotesize #1}\hspace{0.15em}#2}}
+\newcommand{\awardbullet}{\hangindent=0.9em\hangafter=1\makebox[0.9em][l]{\raisebox{0.1ex}{\scriptsize\textbullet}}}
+
 \newcommand{\awarditem}[1]{%
   \par\noindent
   \hangindent=0.9em
@@ -91,7 +103,7 @@ manipulation; robust world-model reinforcement learning.
 \datedline{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{Aug. 2023 -- Jun. 2027 (Expected)}
 \textit{B.Eng. in Software Engineering, School of Computer Science}\\[1pt]
 Major GPA: \textbf{92.5/100}; Rank: \textbf{3/95}. Undergraduate researcher at the Institute of Parallel and
-Distributed Systems (IPADS), advised by Profs. Jinyu Gu and Haibo Chen.
+Distributed Systems (IPADS), advised by Profs. \advisor{https://ipads.sjtu.edu.cn/pub/members/jinyu_gu}{Jinyu Gu} and \advisor{https://ipads.sjtu.edu.cn/pub/members/haibo_chen}{Haibo Chen}.
 
 \section{Selected Publications}
 \begin{itemize}[leftmargin=0pt,label={},itemsep=3.5pt,topsep=1pt]
@@ -141,7 +153,7 @@ Distributed Systems (IPADS), advised by Profs. Jinyu Gu and Haibo Chen.
 
 \section{Research Experience}
 \experience{The University of Hong Kong (HKU)}{Oct. 2026 -- Present}
-{Research Assistant $\vert$ Advisor: Prof. Yi Ma}
+{Research Assistant $\vert$ Advisor: Prof. \advisor{https://www.ai.hku.hk/people/academic-staff/mayi}{Yi Ma}}
 \begin{itemize}
   \item \textbf{TouchCraft} \publink{https://iairplane.github.io/tactile_agent_page/}{Project} --- Converts one
   RGB-D demonstration into an object-centric, stage-wise closed-loop policy by composing reusable tactile
@@ -150,7 +162,7 @@ Distributed Systems (IPADS), advised by Profs. Jinyu Gu and Haibo Chen.
 \end{itemize}
 
 \experience{New York University (NYU)}{Aug. 2026 -- Present}
-{Research Intern $\vert$ Advisor: Prof. Zhengyuan Zhou}
+{Research Intern $\vert$ Advisor: Prof. \advisor{https://engineering.nyu.edu/faculty/zhengyuan-zhou}{Zhengyuan Zhou}}
 \begin{itemize}
   \item \textbf{DRWM: Reverse-KL Robust Targets for World-Model Reinforcement Learning} --- Addresses tail
   failures hidden by mean world-model targets with a plug-in aggregator that upweights adverse sampled
@@ -159,7 +171,7 @@ Distributed Systems (IPADS), advised by Profs. Jinyu Gu and Haibo Chen.
 \end{itemize}
 
 \experience{Sharpa Robotics}{Oct. 2026 -- Present}
-{Research Intern $\vert$ Mentor: Hao Ma}
+{Research Intern $\vert$ Mentor: \advisor{https://haomafrlu.github.io/}{Hao Ma}}
 \begin{itemize}
   \item \textbf{Tactile Agents for Dexterous Manipulation} --- Explored the use of tactile agents for
   contact-aware reasoning and closed-loop control in dexterous manipulation.
@@ -169,8 +181,8 @@ Distributed Systems (IPADS), advised by Profs. Jinyu Gu and Haibo Chen.
 {\small\hfill Zhuoran Li $\vert$ Academic CV $\vert$ Page 2}\vspace{-4pt}
 
 \section{Research Experience (continued)}
-\experience{VITAL Technology}{May 2026 -- Oct. 2026}
-{Intern $\vert$ Mentors: Yizhe Wu and Rui Li}
+\experience{ViTai Robotics}{May 2026 -- Oct. 2026}
+{Intern $\vert$ Mentors: \advisor{https://ori.ox.ac.uk/people/yizhe-wu/}{Yizhe Wu} and \advisor{https://vit.ai/}{Rui Li}}
 \begin{itemize}
   \item \textbf{Agentic Robot--Tactile Integration} --- Explored architectures that fuse tactile feedback
   with agentic robot reasoning and control.
@@ -179,13 +191,14 @@ Distributed Systems (IPADS), advised by Profs. Jinyu Gu and Haibo Chen.
 \end{itemize}
 
 \experience{Shanghai Jiao Tong University (SJTU)}{Jun. 2024 -- Present}
-{Undergraduate Researcher $\vert$ Advisors: Profs. Xiaofeng Gao, Jinyu Gu, and Haibo Chen}
+{Undergraduate Researcher $\vert$ Advisors: Profs. \advisor{https://www.cs.sjtu.edu.cn/~gao-xf/}{Xiaofeng Gao}, \advisor{https://ipads.sjtu.edu.cn/pub/members/jinyu_gu}{Jinyu Gu}, and \advisor{https://ipads.sjtu.edu.cn/pub/members/haibo_chen}{Haibo Chen}}
 \begin{itemize}
   \item \textbf{RoboHarness: Memory-Augmented Policy Harness for VLA Robustness} --- Built an inference-time
   reliability layer for frozen VLA policies using contrastive Dual-Memory retrieval and attribution-guided
   interventions; raised average success by 56.6 percentage points across three backbones. \textit{IROS 2026.}
-  \item \textbf{OpenHarmony Embodied Agent Systems} --- Secured a nationally selected RMB 100,000 NSFC
-  undergraduate research grant as Student PI and led research on embodied-agent systems for OpenHarmony.
+  \item \textbf{OpenHarmony Embodied Agent Systems} \nsfctag\\[1pt]
+  Secured a nationally selected \textbf{NSFC} undergraduate research grant as \textbf{Student PI}; led research on
+  embodied-agent systems for OpenHarmony.
   \item \textbf{GKD-Recruiter} --- Framed spatial recruitment as heterogeneous multi-agent task allocation,
   matching agent capabilities and social influence to task demands through graph knowledge distillation
   and Rainbow DQN. \textit{ICML 2026.}
@@ -198,26 +211,26 @@ Distributed Systems (IPADS), advised by Profs. Jinyu Gu and Haibo Chen.
 \end{itemize}
 
 \experience{LinS Lab, National University of Singapore (NUS)}{Apr. 2025 -- Dec. 2025}
-{Research Intern $\vert$ Advisor: Prof. Lin Shao}
+{Research Intern $\vert$ Advisor: Prof. \advisor{https://www.comp.nus.edu.sg/cs/people/shaol/}{Lin Shao}}
 \begin{itemize}
   \item \textbf{ManiLadder} --- Developed simulation, data, and evaluation pipelines for 112 tasks across
   four calibrated difficulty levels spanning diverse embodiments and manipulation skills.
 \end{itemize}
 
 \section{Awards and Honors}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash\color{accent}\bfseries\scriptsize}p{0.18\textwidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}X@{}}
-\makebox[1.15em][c]{{\footnotesize\faTrophy}}\hspace{0.25em}Paper Award &
-\awarditem{\textbf{Outstanding Workshop Paper Award} (2026) --- IROS Bimanual Robot Learning Workshop,
-``Scaling vs. Structure?''} \\[1.5pt]
-\makebox[1.15em][c]{{\footnotesize\faFlask}}\hspace{0.25em}Research Grants &
-\awarditem{\textbf{NSFC Basic Research Program for Undergraduate Students} (2026)\newline
-{\small\textbf{Nationally selected Student PI; RMB 100,000}}}
-\awarditem{\textbf{Chun-Tsung Foundation Award} (2024)\newline
-{\small\textbf{Student PI}}} \\[1.5pt]
-\makebox[1.15em][c]{{\footnotesize\faMedal}}\hspace{0.25em}Honors &
-\awarditem{\textbf{Zhiyuan Honor Scholarship} (2023--2025); \textbf{Academic Scholarship} (2024--2025)}
-\awarditem{\textbf{First Prize, Shanghai Undergraduate Mathematics Competition} (2024)}
-\awarditem{\textbf{Jiangsu Province Excellent Student Award} (2023)}
+\begin{tabularx}{\textwidth}{@{}>{\leavevmode\raggedright\arraybackslash\color{accent}\bfseries\scriptsize}p{0.14\textwidth}%
+  @{\hspace{0.3em}}>{\raggedright\arraybackslash}X@{\hspace{0.4em}}>{\raggedleft\arraybackslash}p{0.1\textwidth}@{}}
+\awardlabel{\faFlask}{Grants} &
+  \awardbullet\textcolor{accent}{\textbf{National Natural Science Foundation of China (NSFC)}} --- Basic Research
+  Program for Undergraduate Students; \textbf{Student PI}, \textbf{RMB~100,000}, nationally selected & 2026 \\[1pt]
+ & \awardbullet\textbf{Chun-Tsung Foundation Award} --- \textbf{Student PI} & 2024 \\[3pt]
+\awardlabel{\faTrophy}{Paper Award} &
+  \awardbullet\textbf{Outstanding Workshop Paper Award} --- IROS Bimanual Robot Learning Workshop,
+  ``Scaling vs. Structure?'' & 2026 \\[3pt]
+\awardlabel{\faMedal}{Honors} &
+  \awardbullet\textbf{Zhiyuan Honor Scholarship}; \textbf{Academic Scholarship} (2024--2025) & 2023--2025 \\[1pt]
+ & \awardbullet\textbf{First Prize, Shanghai Undergraduate Mathematics Competition} & 2024 \\[1pt]
+ & \awardbullet\textbf{Jiangsu Province Excellent Student Award} & 2023
 \end{tabularx}
 
 \section{Technical Skills}
