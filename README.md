@@ -15,8 +15,8 @@ Then open `http://localhost:8000`.
 ## Public identity and project links
 
 - Personal GitHub: `https://github.com/iairplane`
-- ManiLadder project: `https://maniladder.github.io/`
-- ManiLadder overview video: `https://maniladder.github.io/videos/video_corl26.mp4`
+- ManiLadder project: `https://maniladder-benchmark.github.io/`
+- ManiLadder overview video: `https://maniladder-benchmark.github.io/videos/video_final.mp4`
 - RoboHarness uses the collaboration project's canonical repository at `https://github.com/LZY-1021/RoboHarness`.
 - Downloadable CV: `documents/Zhuoran_Li_CV.pdf`
 

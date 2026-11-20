@@ -130,12 +130,17 @@
           </div>
         </div>
         <div class="news-list">
+          <div class="news-item news-item--featured" data-type="paper">
+            <time datetime="2026-11">Nov 2026</time>
+            <span class="news-label news-label--paper">Release</span>
+            <p>We released <a href="#maniladder">ManiLadder</a>, a difficulty-calibrated manipulation benchmark with <strong>112 tasks</strong> across <strong>4 difficulty levels</strong> and <strong>8 task categories</strong>, with demonstrations and trained checkpoints. It has not yet been solved by Astra. <a href="https://maniladder-benchmark.github.io/" target="_blank" rel="external noopener">Website</a> · <a href="https://arxiv.org/abs/2611.16374" target="_blank" rel="external noopener">arXiv</a> · <a href="https://x.com/GChongkai/status/2123494067015459302" target="_blank" rel="external noopener">X</a></p>
+          </div>
           <div class="news-item" data-type="review">
             <time datetime="2026-11">Nov 2026</time>
             <span class="news-label news-label--review">Under review</span>
             <p><a href="#cats">CaTS: Code as Tactile Supervisor</a> was submitted to <strong>CVPR 2027</strong>; I am the first author.</p>
           </div>
-          <div class="news-item news-item--featured" data-type="award">
+          <div class="news-item" data-type="award">
             <time datetime="2026">2026</time>
             <span class="news-label news-label--award">Award</span>
             <p><a href="#maniladder">ManiLadder</a> received the <strong>Outstanding Workshop Paper Award</strong> at the IROS 2026 Bimanual Robot Learning Workshop, “Scaling vs. Structure?”</p>
@@ -205,10 +210,10 @@
               </video>
             </figure>
             <div class="work-copy">
-              <p class="work-meta">IROS 2026 Workshop · Outstanding Workshop Paper Award · Core developer</p>
-              <h3>ManiLadder: Benchmarking robot manipulation through a categorized, multi-level task ladder</h3>
-              <p>ManiLadder organizes more than 100 simulated manipulation tasks into four difficulty levels, with one workflow for task construction, demonstrations, policy training, and evaluation. The benchmark makes it easier to see where capability changes as tasks demand longer horizons, richer coordination, and stronger generalization.</p>
-              <p class="links"><a href="https://maniladder.github.io/" target="_blank" rel="external noopener">Project page</a><a href="https://maniladder.github.io/videos/video_corl26.mp4" target="_blank" rel="external noopener">Video</a></p>
+              <p class="work-meta">arXiv 2026 · IROS 2026 Workshop Outstanding Paper Award · Core developer</p>
+              <h3>ManiLadder: Benchmarking robot manipulation through a categorized, multi-difficulty-level task ladder</h3>
+              <p>What makes a manipulation task easy or hard? ManiLadder answers this systematically: <strong>112 simulated tasks</strong> in <strong>4 difficulty levels</strong> and <strong>8 task categories</strong>, where each level is set by the success rate of an imitation-learning policy under the same training budget. Every level spans grippers and dexterous hands, rigid and deformable objects, and single- and dual-arm settings. Each task ships with demonstrations and trained flow-matching, π<sub>0.5</sub> and Astra checkpoints, and the benchmark is <strong>not yet solved by Astra</strong>.</p>
+              <p class="links"><a href="https://maniladder-benchmark.github.io/" target="_blank" rel="external noopener">Project page</a><a href="https://arxiv.org/abs/2611.16374" target="_blank" rel="external noopener">Paper</a><a href="https://github.com/HeegerGao/ManiLadder-Benchmark" target="_blank" rel="external noopener">Code</a><a href="https://huggingface.co/datasets/Linslab/ManiLadder_Dataset" target="_blank" rel="external noopener">Dataset</a><a href="https://maniladder-benchmark.github.io/videos/video_final.mp4" target="_blank" rel="external noopener">Video</a></p>
             </div>
           </article>
 
