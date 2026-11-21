@@ -167,3 +167,47 @@
     });
   }
 })();
+
+// Show a round avatar above a mentor's name on hover or keyboard focus; the link itself opens their homepage.
+(() => {
+  const names = document.querySelectorAll("a.prof");
+  if (!names.length) return;
+  const pop = document.createElement("span");
+  pop.className = "prof-pop";
+  pop.setAttribute("aria-hidden", "true");
+  document.body.appendChild(pop);
+  const photos = new Map();
+  names.forEach((a) => {
+    const src = a.dataset.photo;
+    if (!src) return;
+    const img = new Image();
+    img.onload = () => photos.set(a, src);
+    img.src = src;
+  });
+  let current = null;
+  const show = (a) => {
+    current = a;
+    const photo = photos.get(a);
+    pop.classList.toggle("has-photo", Boolean(photo));
+    pop.style.backgroundImage = photo ? `url("${photo}")` : "";
+    pop.textContent = a.dataset.initials || "";
+    const rects = a.getClientRects();
+    const r = rects[0] || a.getBoundingClientRect();
+    pop.style.left = `${r.left + r.width / 2 + window.scrollX}px`;
+    pop.style.top = `${r.top + window.scrollY - 76 - 12}px`;
+    requestAnimationFrame(() => pop.classList.add("show"));
+  };
+  const hide = (a) => {
+    if (current === a) {
+      pop.classList.remove("show");
+      current = null;
+    }
+  };
+  names.forEach((a) => {
+    a.addEventListener("mouseenter", () => show(a));
+    a.addEventListener("mouseleave", () => hide(a));
+    a.addEventListener("focus", () => show(a));
+    a.addEventListener("blur", () => hide(a));
+  });
+  window.addEventListener("scroll", () => current && hide(current), { passive: true });
+})();

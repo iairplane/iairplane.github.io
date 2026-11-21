@@ -872,3 +872,44 @@ dt,
     scroll-behavior: auto;
   }
 }
+
+/* Advisor and mentor avatars that pop up above a name on hover */
+.prof-pop {
+  position: absolute;
+  z-index: 60;
+  width: 76px;
+  height: 76px;
+  margin: 0;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 6px 18px rgba(23, 23, 23, 0.22), 0 0 0 1px rgba(183, 28, 28, 0.25);
+  background: var(--accent) center / cover no-repeat;
+  color: #fff;
+  font: 600 1.15rem/70px var(--sans);
+  letter-spacing: 0.02em;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 8px) scale(0.6);
+  transform-origin: 50% 100%;
+  transition: opacity 0.18s ease, transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.35);
+}
+.prof-pop::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -9px;
+  width: 0;
+  height: 0;
+  margin-left: -6px;
+  border: 6px solid transparent;
+  border-top-color: #fff;
+}
+.prof-pop.show {
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
+}
+.prof-pop.has-photo { color: transparent; }
+@media (prefers-reduced-motion: reduce) {
+  .prof-pop { transition: opacity 0.12s ease; transform: translate(-50%, 0); }
+}
