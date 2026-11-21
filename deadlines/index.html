@@ -28,23 +28,17 @@
 <body>
 <div class="wrap">
   <h1>李卓然 · 推荐信截止时间</h1>
-  <p class="sub">共 12 份 · 北京时间</p>
+  <p class="sub">共 6 份 · 北京时间</p>
   <div id="list"></div>
 </div>
 <script>
 const D = [
-  ["Harvard", "ME in Computational Science & Engineering", "2026-12-01T22:00:00Z"],
   ["MIT", "EECS PhD", "2026-12-02T04:59:00Z"],
   ["UC Berkeley", "EECS PhD", "2026-12-02T04:59:00Z"],
   ["UIUC", "CS PhD", "2026-12-02T05:59:00Z"],
   ["Stanford", "CS PhD", "2026-12-09T07:59:00Z"],
   ["CMU", "Robotics PhD · MSCS · MSR（一份推荐信）", "2026-12-09T20:00:00Z"],
-  ["Harvard", "CS PhD", "2026-12-15T22:00:00Z"],
-  ["Princeton", "CS 或 ECE PhD", "2026-12-16T04:59:00Z"],
-  ["Georgia Tech", "Robotics PhD", "2026-12-16T04:59:00Z"],
-  ["UT Austin", "CS PhD", "2026-12-16T05:59:00Z"],
-  ["University of Washington", "CSE PhD", "2026-12-16T07:59:00Z"],
-  ["Yale", "MS in Computer Science", "2027-01-03T04:59:00Z"]
+  ["Princeton", "CS 或 ECE PhD", "2026-12-16T04:59:00Z"]
 ].map(([s,p,u]) => ({s,p,ms:Date.parse(u)})).sort((a,b)=>a.ms-b.ms);
 
 const DAY = 864e5;
