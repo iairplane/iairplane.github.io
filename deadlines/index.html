@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>李卓然 Fall 2027 申请截止时间表</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff;color:#1d1d1f;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",sans-serif;
+    line-height:1.45}
+  .wrap{max-width:620px;margin:0 auto;padding:48px 24px 64px}
+  h1{font-size:22px;font-weight:600;margin:0 0 6px}
+  .sub{color:#86868b;font-size:14px;margin:0 0 32px}
+  .item{display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:16px 0;border-top:1px solid #f0f0f0}
+  .item:last-child{border-bottom:1px solid #f0f0f0}
+  .school{font-size:16px;font-weight:600}
+  .prog{font-size:13.5px;color:#86868b;margin-top:2px}
+  .right{text-align:right;flex-shrink:0}
+  .cd{font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
+  .cd.urgent{color:#d33}
+  .date{font-size:13px;color:#86868b;margin-top:2px;font-variant-numeric:tabular-nums}
+  .item.past{opacity:.35}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>李卓然 · 推荐信截止时间</h1>
+  <p class="sub">共 12 份 · 北京时间</p>
+  <div id="list"></div>
+</div>
+<script>
+const D = [
+  ["Harvard", "ME in Computational Science & Engineering", "2026-12-01T22:00:00Z"],
+  ["MIT", "EECS PhD", "2026-12-02T04:59:00Z"],
+  ["UC Berkeley", "EECS PhD", "2026-12-02T04:59:00Z"],
+  ["UIUC", "CS PhD", "2026-12-02T05:59:00Z"],
+  ["Stanford", "CS PhD", "2026-12-09T07:59:00Z"],
+  ["CMU", "Robotics PhD · MSCS · MSR（一份推荐信）", "2026-12-09T20:00:00Z"],
+  ["Harvard", "CS PhD", "2026-12-15T22:00:00Z"],
+  ["Princeton", "CS 或 ECE PhD", "2026-12-16T04:59:00Z"],
+  ["Georgia Tech", "Robotics PhD", "2026-12-16T04:59:00Z"],
+  ["UT Austin", "CS PhD", "2026-12-16T05:59:00Z"],
+  ["University of Washington", "CSE PhD", "2026-12-16T07:59:00Z"],
+  ["Yale", "MS in Computer Science", "2027-01-03T04:59:00Z"]
+].map(([s,p,u]) => ({s,p,ms:Date.parse(u)})).sort((a,b)=>a.ms-b.ms);
+
+const DAY = 864e5;
+const fmt = new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",hour12:false});
+
+function render(){
+  const now = Date.now();
+  document.getElementById("list").innerHTML = D.map(x => {
+    const d = x.ms - now;
+    let cd, cls = "";
+    if (d <= 0){ cd = "已截止"; cls = " past"; }
+    else {
+      const days = Math.floor(d/DAY), h = Math.floor(d%DAY/36e5);
+      cd = days > 0 ? `${days} 天` : `${h} 小时`;
+    }
+    const urgent = d > 0 && d < 7*DAY ? " urgent" : "";
+    return `<div class="item${cls}">
+      <div><div class="school">${x.s}</div><div class="prog">${x.p}</div></div>
+      <div class="right"><div class="cd${urgent}">${cd}</div><div class="date">${fmt.format(x.ms)}</div></div>
+    </div>`;
+  }).join("");
+}
+render();
+setInterval(render, 60000);
+</script>
+</body>
+</html>
