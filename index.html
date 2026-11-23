@@ -19,7 +19,7 @@
     <link rel="canonical" href="https://iairplane.github.io/">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/media/zhuoran-hero.jpg" as="image" fetchpriority="high">
-    <link rel="stylesheet" href="styles.css?v=20261121-2">
+    <link rel="stylesheet" href="styles.css?v=20261123-1">
     <script src="script.js?v=20261121-2" defer></script>
 
     <script type="application/ld+json">
@@ -185,12 +185,13 @@
         <div class="work-list">
           <article class="work-item work-item--teaser" id="cats">
             <figure class="work-media work-media--video">
+              <div class="venue-badges"><span class="venue-badge venue-badge--review">CVPR 2027 · Under review</span></div>
               <video muted loop autoplay playsinline preload="metadata" poster="assets/media/cats-teaser-poster.jpg" aria-label="CaTS teaser: six real-robot tactile tasks">
                 <source src="assets/media/cats-teaser.mp4" type="video/mp4">
               </video>
             </figure>
             <div class="work-copy">
-              <p class="work-meta">CVPR 2027 · Under review · First author</p>
+              <p class="work-meta">First author</p>
               <h3>CaTS: Code as Tactile Supervisor</h3>
               <p>CaTS grounds robot agents in contact-rich manipulation. From a single human RGB-D demonstration and physics-grounded tactile-pattern priors, an agent synthesizes stage-wise tactile supervisors and compiles them into a locally executable program that needs <strong>no foundation-model calls at run time</strong>. It outperforms all evaluated baselines across <strong>6 real-robot</strong> and <strong>20 simulated</strong> tasks.</p>
               <p class="links"><a href="https://iairplane.github.io/tactile_agent_page/" target="_blank" rel="external noopener">Project</a><a href="https://iairplane.github.io/tactile_agent_page/#video" target="_blank" rel="external noopener">Video</a></p>
@@ -199,12 +200,13 @@
 
           <article class="work-item work-item--teaser" id="roboharness">
             <figure class="work-media work-media--video">
+              <div class="venue-badges"><span class="venue-badge venue-badge--accepted">IROS 2026</span></div>
               <video muted loop autoplay playsinline preload="metadata" poster="assets/media/roboharness-teaser-poster.jpg" aria-label="RoboHarness teaser: frozen VLA policies repaired in context">
                 <source src="assets/media/roboharness-teaser.mp4" type="video/mp4">
               </video>
             </figure>
             <div class="work-copy">
-              <p class="work-meta">IROS 2026 · First-listed co-first author</p>
+              <p class="work-meta">First-listed co-first author</p>
               <h3>RoboHarness: A memory-augmented policy harness for VLA robustness</h3>
               <p>RoboHarness adapts frozen vision-language-action policies through dual-memory retrieval and attribution-driven interventions. Across three VLA backbones, it improves average success by <strong>56.6 percentage points</strong>, including <strong>89.1 points</strong> on long-horizon tasks.</p>
               <p class="links"><a href="https://lzy-1021.github.io/RoboHarness/" target="_blank" rel="external noopener">Project</a><a href="https://arxiv.org/abs/2603.24060" target="_blank" rel="external noopener">Paper</a><a href="https://github.com/LZY-1021/RoboHarness" target="_blank" rel="external noopener">Code</a></p>
@@ -213,12 +215,13 @@
 
           <article class="work-item work-item--maniladder" id="maniladder">
             <figure class="work-media">
+              <div class="venue-badges"><span class="venue-badge venue-badge--preprint">arXiv 2026</span><span class="venue-badge venue-badge--award"><svg class="trophy" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v2h3v3a4 4 0 0 1-4 4h-.35A5 5 0 0 1 13 14.9V18h3v3H8v-3h3v-3.1A5 5 0 0 1 8.35 12H8a4 4 0 0 1-4-4V5h3V3Zm0 4H6v1a2 2 0 0 0 1 1.73V7Zm10 0v2.73A2 2 0 0 0 18 8V7h-1Z"/></svg>Outstanding Paper</span></div>
               <video muted loop autoplay playsinline preload="metadata" poster="assets/media/maniladder-teaser-poster.jpg" aria-label="ManiLadder teaser: tasks across the benchmark">
                 <source src="assets/media/maniladder-teaser.mp4" type="video/mp4">
               </video>
             </figure>
             <div class="work-copy">
-              <p class="work-meta">arXiv 2026 · IROS 2026 Workshop Outstanding Paper Award · Core developer</p>
+              <p class="work-meta"><span class="award-flag"><svg class="trophy" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v2h3v3a4 4 0 0 1-4 4h-.35A5 5 0 0 1 13 14.9V18h3v3H8v-3h3v-3.1A5 5 0 0 1 8.35 12H8a4 4 0 0 1-4-4V5h3V3Zm0 4H6v1a2 2 0 0 0 1 1.73V7Zm10 0v2.73A2 2 0 0 0 18 8V7h-1Z"/></svg>Outstanding Paper Award · IROS 2026 Workshop</span> · Core developer</p>
               <h3>ManiLadder: Benchmarking robot manipulation through a categorized, multi-difficulty-level task ladder</h3>
               <p>What makes a manipulation task easy or hard? ManiLadder answers this systematically: <strong>112 simulated tasks</strong> in <strong>4 difficulty levels</strong> and <strong>8 task categories</strong>, where each level is set by the success rate of an imitation-learning policy under the same training budget. Every level spans grippers and dexterous hands, rigid and deformable objects, and single- and dual-arm settings. Each task ships with demonstrations and trained flow-matching, π<sub>0.5</sub> and Astra checkpoints, and the benchmark is <strong>not yet solved by Astra</strong>.</p>
               <p class="links"><a href="https://maniladder-benchmark.github.io/" target="_blank" rel="external noopener">Project page</a><a href="https://arxiv.org/abs/2611.16374" target="_blank" rel="external noopener">Paper</a><a href="https://github.com/HeegerGao/ManiLadder-Benchmark" target="_blank" rel="external noopener">Code</a><a href="https://huggingface.co/datasets/Linslab/ManiLadder_Dataset" target="_blank" rel="external noopener">Dataset</a><a href="https://maniladder-benchmark.github.io/videos/video_final.mp4" target="_blank" rel="external noopener">Video</a></p>
@@ -226,9 +229,10 @@
           </article>
 
           <article class="work-item" id="gkd-recruiter">
-            <figure class="work-media"><img src="assets/media/GKD.png" alt="GKD-Recruiter architecture combining social and worker-task graph embeddings, graph knowledge distillation, and Rainbow DQN recruitment." width="645" height="394" loading="lazy" decoding="async"></figure>
+            <figure class="work-media">
+              <div class="venue-badges"><span class="venue-badge venue-badge--accepted">ICML 2026</span></div><img src="assets/media/GKD.png" alt="GKD-Recruiter architecture combining social and worker-task graph embeddings, graph knowledge distillation, and Rainbow DQN recruitment." width="645" height="394" loading="lazy" decoding="async"></figure>
             <div class="work-copy">
-              <p class="work-meta">ICML 2026 regular paper · Student co-first author</p>
+              <p class="work-meta">Regular paper · Student co-first author</p>
               <h3>GKD-Recruiter: Graph knowledge distillation for spatial crowdsourcing</h3>
               <p>GKD-Recruiter combines directional social influence with worker–task affinity and uses graph knowledge distillation plus Rainbow DQN to recruit workers for the right physical tasks under limited demand.</p>
               <p class="links"><a href="https://icml.cc/virtual/2026/poster/61673" target="_blank" rel="external noopener">Project</a><a href="https://openreview.net/forum?id=nsEtk9aFiZ" target="_blank" rel="external noopener">Paper</a><a href="https://github.com/GaoYucen/GKD-Recruiter" target="_blank" rel="external noopener">Code</a></p>
@@ -236,9 +240,10 @@
           </article>
 
           <article class="work-item" id="drncs">
-            <figure class="work-media"><img src="assets/media/drncs.png" alt="DRNCS dual-level route generation pipeline with shortcut construction and prediction on original and sparse graphs." width="653" height="385" loading="lazy" decoding="async"></figure>
+            <figure class="work-media">
+              <div class="venue-badges"><span class="venue-badge venue-badge--accepted">ECML PKDD 2025</span></div><img src="assets/media/drncs.png" alt="DRNCS dual-level route generation pipeline with shortcut construction and prediction on original and sparse graphs." width="653" height="385" loading="lazy" decoding="async"></figure>
             <div class="work-copy">
-              <p class="work-meta">ECML PKDD 2025 · First author</p>
+              <p class="work-meta">First author</p>
               <h3>DRNCS: Dual-level route generation through contraction and shortcuts</h3>
               <p>DRNCS builds a sparse road graph with shortcut-edge differential contraction, then generates routes on the contracted structure. It reports 0.3–0.8 ms per trip and more than 40% faster queries across five real-world datasets.</p>
               <p class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-032-06066-2_11" target="_blank" rel="external noopener">Paper</a><a href="https://github.com/iairplane/DRNCS" target="_blank" rel="external noopener">Code</a></p>
@@ -246,9 +251,10 @@
           </article>
 
           <article class="work-item" id="sptp">
-            <figure class="work-media"><img src="assets/media/SPTP.png" alt="Layered graph for the Shortest Path Tour Problem, showing candidate nodes across ordered stages from source to destination." width="654" height="394" loading="lazy" decoding="async"></figure>
+            <figure class="work-media">
+              <div class="venue-badges"><span class="venue-badge venue-badge--accepted">TCS 2025</span></div><img src="assets/media/SPTP.png" alt="Layered graph for the Shortest Path Tour Problem, showing candidate nodes across ordered stages from source to destination." width="654" height="394" loading="lazy" decoding="async"></figure>
             <div class="work-copy">
-              <p class="work-meta">Theoretical Computer Science 1054 (2025) · Co-author</p>
+              <p class="work-meta">Theoretical Computer Science 1054 · Co-author</p>
               <h3>Algorithms for the Shortest Path Tour Problem</h3>
               <p>Two exact, linear-space algorithms solve ordered waypoint tours on road networks. Stage Dijkstra reaches the best-known time bound, while Global Dijkstra is faster in practice on large graphs.</p>
               <p class="links"><a href="https://www.sciencedirect.com/science/article/pii/S0304397525003664" target="_blank" rel="external noopener">Paper</a></p>
