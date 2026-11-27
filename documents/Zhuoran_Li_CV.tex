@@ -19,7 +19,13 @@
 }
 \input{glyphtounicode}
 
-\pagestyle{empty}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{12pt}
+\setlength{\headsep}{4pt}
+\fancyhead[R]{\ifnum\value{page}>1 \small Zhuoran Li $\vert$ Academic CV $\vert$ Page \thepage\fi}
 \pdfgentounicode=1
 \urlstyle{same}
 \raggedright
@@ -105,8 +111,8 @@ manipulation; robust world-model reinforcement learning.
 Major GPA: \textbf{92.5/100}; Rank: \textbf{3/95}. Undergraduate researcher at the Institute of Parallel and
 Distributed Systems (IPADS), advised by Profs. \advisor{https://ipads.sjtu.edu.cn/pub/members/jinyu_gu}{Jinyu Gu} and \advisor{https://ipads.sjtu.edu.cn/pub/members/haibo_chen}{Haibo Chen}.
 
-\section{Selected Publications}
-\begin{itemize}[leftmargin=0pt,label={},itemsep=3.5pt,topsep=1pt]
+\section{Publications}
+\begin{itemize}[leftmargin=0pt,label={},itemsep=2.5pt,topsep=1pt]
   \publication
     {RoboHarness: A Memory-Augmented Policy Harness for Vision-Language-Action Model Robustness via In-Context Adaptation}
     {\underline{Zhuoran Li}, Zhiyang Li, Kaijun Zhou, and Jinyu Gu.}
@@ -131,16 +137,18 @@ Distributed Systems (IPADS), advised by Profs. \advisor{https://ipads.sjtu.edu.c
      \publink{https://github.com/iairplane/DRNCS}{Code}}
 
   \publication
-    {ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Level Task Ladder}
-    {Chongkai Gao$^{*}$, Jieao Shi$^{*}$, Zhaoyu Mu$^{*}$, \underline{Zhuoran Li}, Yudi Lin,
-    Xuanwei Liu, Wei Ken Ng, Baiye Cheng, Anqi Chen, Kerun Liu, Xuchuan Huang, Shengjia Zhu,
-    Nga Teng Chan, Xingyu Chen, and Lin Shao.}
-    {Under review at ICRA 2027.}
-    {\publink{https://maniladder.github.io/}{Project}\hspace{0.35em}
-     \publink{https://ella-e.github.io/files/ManiLadder.pdf}{Paper}\\[-1pt]
-     \textcolor{accent}{\faTrophy}\ 
+    {ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder}
+    {Chongkai Gao$^{*}$, Jieao Shi$^{*}$, Zhaoyu Mu$^{*}$, Yudi Lin$^{*}$, \underline{Zhuoran Li}, Xuanwei Liu,
+    Wei Ken Ng, Baiye Cheng, Anqi Chen, Kerun Liu, Xuchuan Huang, Haoyang Li, Shengjia Zhu,
+    Nga Teng Chan, Yuxuan Zhang, Xingyu Chen, and Lin Shao.}
+    {IROS 2026 \& CoRL 2026 Workshops; under review at ICRA 2027.}
+    {\publink{https://maniladder.github.io/}{Project}\\[-1pt]
+     \textcolor{accent}{\faTrophy}\
      \href{https://bimanual-robot-learning.github.io/}{\textbf{Outstanding Workshop Paper Award}}
-     --- IROS 2026 Bimanual Robot Learning Workshop}
+     --- IROS 2026 Bimanual Robot Learning Workshop\\[-1pt]
+     \textcolor{accent}{\faMicrophone}\
+     \href{https://corl2026-realworld-robot-learning.github.io/}{\textbf{Lightning Talk}}
+     --- CoRL 2026 SimBench2Real Workshop}
 
   \publication
     {Algorithms for Shortest Path Tour Problem}
@@ -151,24 +159,40 @@ Distributed Systems (IPADS), advised by Profs. \advisor{https://ipads.sjtu.edu.c
 \vspace{-3pt}
 {\small $^{*}$Equal contribution.}
 
+\section{Under Review}
+\begin{itemize}[leftmargin=0pt,label={},itemsep=2.5pt,topsep=1pt]
+  \publication
+    {CaTS: Code as Tactile Supervisor -- Grounding Robot Agents with Demonstration Priors and Tactile Supervision}
+    {\underline{Zhuoran Li}, Yizhe Wu, Rui Li, Hao Ma, and Yi Ma.}
+    {Under review at CVPR 2027.}
+    {\publink{https://iairplane.github.io/tactile_agent_page/}{Project}}
+
+  \publication
+    {Adaptive Risk-Sensitive World Modeling}
+    % Working title (renamed from DRWM); confirm final title before submission
+    {\underline{Zhuoran Li}, Duo Zhou, and Zhengyuan Zhou.}
+    {Under review at ICML 2027.}
+    {}
+
+\end{itemize}
+
 \section{Research Experience}
 \experience{The University of Hong Kong (HKU)}{Oct. 2026 -- Present}
 {Research Assistant $\vert$ Advisor: Prof. \advisor{https://www.ai.hku.hk/people/academic-staff/mayi}{Yi Ma}}
 \begin{itemize}
-  \item \textbf{CaTS: Code as Tactile Supervisor} \publink{https://iairplane.github.io/tactile_agent_page/}{Project}
-  --- Grounds robot agents in contact-rich manipulation: synthesizes stage-wise tactile supervisors from one
-  RGB-D demonstration and tactile-pattern priors, compiled into a locally executable program; outperforms all
-  baselines across 6 real-robot and 20 simulated tasks.
-  \textcolor{accent}{\textit{Under review at CVPR 2027.}}
+  \item \textbf{CaTS} (first author) --- Synthesizes stage-wise tactile supervisors from one RGB-D demonstration
+  and tactile-pattern priors, compiled into a locally executable program; outperforms all baselines across
+  6 real-robot and 20 simulated tasks. \textit{Under review at CVPR 2027.}
+  \item \textbf{Egocentric Tactile Pretraining} (project lead) --- Leading a ViTai Robotics--TranscEngram
+  collaboration collecting million-hour-scale tactile manipulation data; code and dataset to be open-sourced.
 \end{itemize}
 
 \experience{New York University (NYU)}{Aug. 2026 -- Present}
 {Research Intern $\vert$ Advisor: Prof. \advisor{https://engineering.nyu.edu/faculty/zhengyuan-zhou}{Zhengyuan Zhou}}
 \begin{itemize}
-  \item \textbf{DRWM: Reverse-KL Robust Targets for World-Model Reinforcement Learning} --- Addresses tail
-  failures hidden by mean world-model targets with a plug-in aggregator that upweights adverse sampled
-  futures across four RL backbones; achieves the best CVaR10 and 100\% success on WIMLE-Walk while
-  preserving mean performance. \textcolor{accent}{\textit{Under review at ICML 2027.}}
+  \item \textbf{Adaptive Risk-Sensitive World Modeling} (first author) --- Plug-in aggregator that upweights adverse sampled world-model futures across four
+  RL backbones; best CVaR10 and 100\% success on WIMLE-Walk while preserving mean performance.
+  \textit{Under review at ICML 2027.}
 \end{itemize}
 
 \experience{Sharpa Robotics}{Oct. 2026 -- Present}
@@ -178,10 +202,6 @@ Distributed Systems (IPADS), advised by Profs. \advisor{https://ipads.sjtu.edu.c
   contact-aware reasoning and closed-loop control in dexterous manipulation.
 \end{itemize}
 
-\newpage
-{\small\hfill Zhuoran Li $\vert$ Academic CV $\vert$ Page 2}\vspace{-4pt}
-
-\section{Research Experience (continued)}
 \experience{ViTai Robotics}{May 2026 -- Oct. 2026}
 {Intern $\vert$ Mentors: \advisor{https://ori.ox.ac.uk/people/yizhe-wu/}{Yizhe Wu} and \advisor{https://vit.ai/}{Rui Li}}
 \begin{itemize}
@@ -194,21 +214,17 @@ Distributed Systems (IPADS), advised by Profs. \advisor{https://ipads.sjtu.edu.c
 \experience{Shanghai Jiao Tong University (SJTU)}{Jun. 2024 -- Present}
 {Undergraduate Researcher $\vert$ Advisors: Profs. \advisor{https://www.cs.sjtu.edu.cn/~gao-xf/}{Xiaofeng Gao}, \advisor{https://ipads.sjtu.edu.cn/pub/members/jinyu_gu}{Jinyu Gu}, and \advisor{https://ipads.sjtu.edu.cn/pub/members/haibo_chen}{Haibo Chen}}
 \begin{itemize}
-  \item \textbf{RoboHarness: Memory-Augmented Policy Harness for VLA Robustness} --- Built an inference-time
-  reliability layer for frozen VLA policies using contrastive Dual-Memory retrieval and attribution-guided
-  interventions; raised average success by 56.6 percentage points across three backbones. \textit{IROS 2026.}
+  \item \textbf{RoboHarness} (first author) --- Inference-time reliability layer for frozen VLA policies via
+  contrastive dual-memory retrieval; +56.6 pp average success across three backbones. \textit{IROS 2026.}
   \item \textbf{OpenHarmony Embodied Agent Systems} \nsfctag\\[1pt]
   Secured a nationally selected \textbf{NSFC} undergraduate research grant as \textbf{Student PI}; led research on
   embodied-agent systems for OpenHarmony.
-  \item \textbf{GKD-Recruiter} --- Framed spatial recruitment as heterogeneous multi-agent task allocation,
-  matching agent capabilities and social influence to task demands through graph knowledge distillation
-  and Rainbow DQN. \textit{ICML 2026.}
-  \item \textbf{DRNCS} --- Built a hierarchical route-generation method for navigation agents on dense road
-  graphs; node contraction and shortcut injection reduced planning to 0.3--0.8 ms per route and
-  3,356 routes/s. \textit{ECML PKDD 2025.}
-  \item \textbf{Shortest Path Tour Problem} --- Implemented and benchmarked exact Stage and Global Dijkstra
-  planners for agents visiting ordered waypoint sets, reaching up to a 50$\times$ speedup on million-node
-  road networks. \textit{Theoretical Computer Science, 2025.}
+  \item \textbf{GKD-Recruiter} (co-first author) --- Multi-agent task allocation matching heterogeneous agents
+  to task demands via graph knowledge distillation and deep RL. \textit{ICML 2026.}
+  \item \textbf{DRNCS} (first author) --- Hierarchical planning for navigation agents in large-scale graph
+  environments; 0.3--0.8 ms per plan. \textit{ECML PKDD 2025.}
+  \item \textbf{Shortest Path Tour Problem} --- Exact planners for agents executing ordered multi-waypoint
+  tasks; up to 50$\times$ faster planning in million-node environments. \textit{TCS 2025.}
 \end{itemize}
 
 \experience{LinS Lab, National University of Singapore (NUS)}{Apr. 2025 -- Dec. 2025}
